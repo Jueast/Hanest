@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2><i>post funny and hanest things!</i></h2>
+
+    <form method="post">
+      <label>
+        <div>Fake Name</div>
+        <input type="text" name="username" value="{{subject}}">
+      </label>
+
+      <label>
+        <div>Content</div>
+        <textarea name="content">{{content}}</textarea>
+      </label>
+
+      <div class="error">{{error}}</div>
+
+      <input type="submit">
+
+    </form>
+{% endblock %}
