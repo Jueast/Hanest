@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block form %}
+  <div style="text-align:center">
+    <h2>Thanks!</h2>
+    <a href='/'> return to home </a>
+  </div>
+{% endblock %}
+
+{% block content %}
+  {% for p in posts %}
+    {{ p.render() | safe }}
+    <br><br>
+  {% endfor %} 
+{% endblock %}

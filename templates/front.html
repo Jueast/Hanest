@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block content %}
+{% block form %}
     <h2><i>post funny and hanest things!</i></h2>
 
     <form method="post">
@@ -15,7 +15,14 @@
 
       <div class="error">{{error}}</div>
 
-      <input type="submit">
+      <input type="submit" value="submit">
 
     </form>
+{% endblock %}
+
+{% block content %}
+  {% for p in posts %}
+    {{ p.render() | safe }}
+    <br><br>
+  {% endfor %} 
 {% endblock %}
