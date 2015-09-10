@@ -1,6 +1,6 @@
 body {
   font-family: "Noto Sans","微软雅黑","黑体",sans-serif;
-  background-color: #66CCCC;
+  background-color: #009999;
   color: white;
 }
 .error {
@@ -64,28 +64,45 @@ footer {
 form {
     text-align: center;
 }
+.post {
+	background-color:#006363;
+	border-radius: 15px;
+}
 .post + .post {
-    margin-top: 15px;
+    margin-top: 15px;W
 }
 
 .post-heading {
     position: relative;
-    border-bottom: 3px solid #666;
 }
 
 .post-username {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
+	vertical-align: middle; 
 }
 
 .post-date {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    color: #999;
+	right: 176px;
+	bottom: -43px;
+	color: #999;
+	width: 307px;
+	height: 23px;
 
 }
 
 .post-content {
-    margin-top: 5px;
+	margin: 5px;
+	width: auto;
+	padding-left: 100px;
+}
+.post-more {
+	margin: 5px;
+	width: auto;
+	padding-left: 100px;
+}
+.menu {
+	float:left;
+	width: 100px;
+
 }

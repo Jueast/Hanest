@@ -1,18 +1,23 @@
 <div class="post">
-  <div class="post-heading">
-    <div class="post-username">
-      {{p.username}}
+    <div class='menu'>
+        <p><button></p>
+        <p><button></p>
     </div>
-
-    <div class="post-date">
-      {{p.created.strftime("%b %d, %Y")}}
+    <div class="post-core">
+        <div class="post-heading">
+            <div class="post-username"> 
+                <img src='http://i2.wp.com/jueast.com/wp-content/uploads/2014/08/desk1.png?resize=50%2C50' height="50" width="50"/>
+                {{p.username}} 
+            </div>
+            <div class="post-date">
+                {{p.created.strftime("%b %d, %Y")}} 
+            </div>
+        </div>
+        <div class="post-content">
+            {{p._render_text | safe}}
+        </div>
+        <div class="post-more">
+            <a href="/{{p.key().id()}}">see more</a>
+        </div>
     </div>
-  </div>
-
-  <div class="post-content">
-    {{p._render_text | safe}}
-  </div>
-  <div class="post-more">
-    <a href="/{{p.key().id()}}">see more</a>
-  </div>
 </div>
