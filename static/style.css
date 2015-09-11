@@ -114,13 +114,17 @@ form {
 	float:left;
 	width: 100px;
 }
+
 section {
-  display: block;
+  display: none;
 }
+
 body.home section.home,
-body.newpost section.newpost{
+body.newpost section.newpost, 
+body.moeha section.moeha {
   display: block; 
 }
+
 header nav ul {
   list-style-type: none; text-align: center;
   margin: 0; padding: 0;

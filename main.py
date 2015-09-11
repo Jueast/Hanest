@@ -1,7 +1,7 @@
 import os
 import webapp2
 import jinja2
-import time
+
 
 from lib.utils import *
 from Handler import *
@@ -43,7 +43,7 @@ class FrontHandler(Handler):
             if validName(username):
                 p = Post(username=username, content=content, up=0, down=0)
                 p.put()
-                self.redirect("/thanks")
+                self.redirect("/thanks#")
             else:
                 error = "Your fake name is not nice!"
                 self.render("front.html", username=username, content=content,
