@@ -32,13 +32,13 @@ class FrontHandler(Handler):
 
     def get(self):
         posts = db.GqlQuery("select * from Post \
-            order by created limit 10")
+            order by created desc limit 10")
         self.render("front.html", posts=posts)
 
     def post(self):
         username = self.request.get('username')
         content = self.request.get('content')
-
+        print(repr(username))
         if username and content:
             if validName(username):
                 p = Post(username=username, content=content, up=0, down=0)
