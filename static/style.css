@@ -72,6 +72,7 @@ form {
 .post {
 	background-color:#006363;
 	border-radius: 15px;
+  overflow: auto;
 }
 .post + .post {
     margin-top: 15px;
@@ -79,42 +80,67 @@ form {
 .post-core{
   margin: 5px;
   padding: 10px;
+  float: left;
 }
+
+.menu {
+  margin: 20px;
+  border-spacing: 5px;
+  float:left;
+  width: 50px;
+}
+.post-votes {
+  text-align: center;
+}
+
 .post-heading {
-    position: relative;
+
+}
+
+.post-avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.post-info {
+  float: right
+
+}
+
+.post-avatar + .post-info {
+  margin-left: 15px;
 }
 
 .post-username {
-    height: 50px;
-    line-height: 50px;
-    float: top;
+    height: 25px;
+    line-height: 25px;
     font-size: 15px;
     font-weight: bold;
-
 }
 
 .post-date {
+  height: 25px;
+  line-height: 25px;
   font-size: 12px;
-	padding-left: 100px;
 	color: #999;
 }
-
+.post-heading + .post-content {
+  margin-top: 70px;
+}
 .post-content {
 	margin: 5px;
 	width: auto;
-	padding-left: 100px;
 }
 .post-more {
   font-size: 12px;
 	margin: 5px;
 	width: auto;
-	padding-left: 100px;
-}
-.menu {
-	float:left;
-	width: 100px;
 }
 
+.post-content + .post-more {
+  margin-top: 30px;
+}
 section {
   display: none;
 }
@@ -142,4 +168,9 @@ header nav a {
   background-color: #32CCCC; border-radius: 20px;
   font: bold 0.9em 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #fff;
   text-decoration: none;
+}
+.button {
+  float:top;
+  width: 100%;
+  height: 50%;
 }
