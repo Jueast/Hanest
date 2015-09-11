@@ -6,7 +6,7 @@ import re
 
 def validName(name):
     USERNAME_RE = re.compile(u"^[a-zA-Z\u4e00-\u9fa5\u3040-\u309f\u30a0-\u30ff_]\
-[0-9a-zA-Z\u4e00-\u9fa5\u3040-\u309f\u30a0-\u30ff_]{3,20}$")
+[0-9a-zA-Z\u4e00-\u9fa5\u3040-\u309f\u30a0-\u30ff_]{0,20}$")
     return USERNAME_RE.match(name)
 
 
