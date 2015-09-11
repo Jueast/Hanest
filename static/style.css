@@ -71,24 +71,27 @@ form {
 .post + .post {
     margin-top: 15px;W
 }
-
+.post-core{
+  margin: 5px;
+  padding: 10px;
+}
 .post-heading {
     position: relative;
 }
 
 .post-username {
-    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    float: top;
+    font-size: 15px;
     font-weight: bold;
-	vertical-align: middle; 
+
 }
 
 .post-date {
-	right: 176px;
-	bottom: -43px;
+  font-size: 12px;
+	padding-left: 100px;
 	color: #999;
-	width: 307px;
-	height: 23px;
-
 }
 
 .post-content {
@@ -97,6 +100,7 @@ form {
 	padding-left: 100px;
 }
 .post-more {
+  font-size: 12px;
 	margin: 5px;
 	width: auto;
 	padding-left: 100px;
@@ -104,5 +108,4 @@ form {
 .menu {
 	float:left;
 	width: 100px;
-
 }
