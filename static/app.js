@@ -29,3 +29,10 @@
         new Hanest();
     }, false); 
 })();
+
+
+function emotion(emotion){
+    console.log(emotion);
+    document.getElementById("content").value += emotion;
+    document.getElementById("emotion-select").options[0].selected  = true; 
+}
